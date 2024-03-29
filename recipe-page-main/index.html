@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      border:50% 25%;
+      padding-bottom: 0;
+      padding-left: 0;
+    }
+
+
+
+
+    #Nutrition-table {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 20px;
+    border-collapse: collapse;
+    }
+
+    #Nutrition-table table {
+        width: 100%;
+    }
+
+    #Nutrition-table th, #Nutrition-table td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd; /* Horizontal lines */
+    }
+
+    #Nutrition-table tr td:nth-child(2), #Nutrition-table tr th:nth-child(2) {
+        color: var(--important); /* Color for the second column */
+        font-weight: bold;
+    }
+
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    :root{
+      --important:   rgb(90,39,41);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    #Preparation{
+      background-color:  rgb(251, 249, 250);
+      padding: 10px;
+    }
+    #Preparation-header{
+      font-size: 20px;
+      font-weight:bold;
+      color:rgb(243, 11, 236);
+    }
+    #Instructions{
+      padding-left:10px;
+    }
+    .rest-header{
+      color:var(--important);
+      font-weight:bold;
+      font-size: 20px;
+      display:block;
+      margin-bottom:20px;
+    }
+    li{
+      padding-inline-start: 0px;
+    }
+    ol, ul{
+      padding: 0;
+    }
+    ol li::marker{
+      color:var(--important)
+    }
+    table{
+      border-collapse: collapse;
+      border:none;
+    }
+
+    tr{
+      border-top: none;
+    }
+
+    td{
+      border:none;
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+  <div id="main">
+      <img src="./assets/images/image-omelette.jpeg" alt="omelette-img"> 
+      <h1>Simple Omelette Recipe</h1>
+    <div>
+      An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+    </div>
+
+    <div id="Preparation">
+      <span id="Preparation-header">Preparation time</span>
+
+      <ul>
+        <li> Total: Approximately 10 minutes</li>
+        &nbsp;
+        <li> Preparation: 5 minutes</li>
+        &nbsp;
+        <li> Cooking: 5 minutes</li>
+      </ul>
+    </div>
+
+    <!-- Ingredients -->
+    <div id="Ingeredients">
+      <span class="rest-header">Ingredients</span>
+    <ul>
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul>
+    </div>
+
+    <!-- Instructions -->
+    <div id="Instructions">
+      <span class="rest-header">Instructions</span> 
+      <ol>
+      
+      <li>
+      <b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      You can add a tablespoon of water or milk for a fluffier texture.
+      </li>
+      <li>
+      <b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.
+      </li>
+      <li>
+      <b>Cook the omelette</b>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+      the eggs evenly coat the surface.
+      </li>
+
+      <li>
+      <b>Add fillings (optional)</b>: When the eggs begin to set at the edges but are still slightly runny in the 
+      middle, sprinkle your chosen fillings over one half of the omelette.
+    </li>
+
+      <li>
+      <b>Fold and serve</b>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+      fillings. Let it cook for another minute, then slide it onto a plate.
+    </li>
+    <li>
+      <b>Enjoy</b>: Serve hot, with additional salt and pepper if needed.
+      </li>
+      </ol>
+    </div>
+
+    <!-- Nutrition -->
+    <div id="Nutrition-table">
+      <span class="rest-header">Nutrition</span>
+
+      The table below shows nutritional values per serving without additional fillings.
+      <table>
+          <tr>
+              <td>Calories</td>
+              <td>277kcal</td>
+          </tr>
+          <tr>
+              <td>Carbs</td>
+              <td>0g</td>
+          </tr>
+          <tr>
+              <td>Protein</td>
+              <td>20g</td>
+          </tr>
+          <tr>
+              <td>Fat</td>
+              <td>22g</td>
+          </tr>
+      </table>
+    </div>
+</div>
+</body>
+</html>
