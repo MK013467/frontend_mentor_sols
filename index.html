@@ -15,30 +15,18 @@
     justify-self: center;
     font-family: Arial, sans-serif;
     background-color:  #f8e5da; /* Color outside the frame */
-    justify-content: center;
 
-}
+  }
 
-#main {
+    #main {
     background-color: #FFFFFF; /* Frame color */
     width: 60%; /* Adjust the width as needed */
     margin: 5% 25% 5% 25%; 
     padding: 20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for a 3D effect */
     border-radius: 15px; /* Optional: rounds the corners of the frame */
-}
-
-@media (max-wifth: 768px) {
-  #main{
-    width: 90%;
-    margin: 5% 5% 5% 5%;
   }
 
-  body{
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
 
 
     #Nutrition-table {
@@ -113,6 +101,23 @@
       border:none;
     }
 
+
+  @media (max-width: 700px) {
+    #main{
+      width: 100%;
+      margin: 0;
+      padding:0;
+      border:none;
+      box-shadow: none;
+      border-radius: 0;
+      flex-direction: column; /* Stacks flex items vertically on smaller screens */
+      justify-content: flex-start; /* Aligns content to the top */
+    }
+
+    body{
+      background-color: white;
+    }
+  }
 
   </style>
 </head>
